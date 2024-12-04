@@ -1,0 +1,81 @@
+{
+  "name": "sample_record_def",
+  "type": "record",
+  "fields": [
+    {
+      "name": "amount",
+	  "default": null,
+      "type": [
+        "null",
+        "double"
+      ]
+    },
+    {
+      "name": "code",
+	  "default": null,
+      "type": [
+        "null",
+        "double"
+      ]
+    },
+    {
+      "name": "price",
+	  "default": null,
+      "type": [
+        "null",
+        "double"
+      ]
+    },
+    {
+      "name": "removed",
+	  "default": null,
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    {
+	  "name": "status",
+	  "type": {
+	    "type": "enum",
+		"name": "StatusCode",
+	    "symbols": [
+	      "UNSPECIFIED",
+	      "OK",
+	      "CANCEL",
+	      "INVALID_REQUEST",
+	      "TIME_OUT",
+	      "NOT_FOUND",
+	      "ALREADY_EXISTS",
+	      "NO_PERMISSION",
+	      "OUT_OF_RESOURCE",
+	      "ABORT",
+	      "OUT_OF_RANGE",
+	      "INTERNAL",
+	      "UNAVAILABLE"
+	    ],
+		"default": "UNSPECIFIED"
+	  }
+    },
+    {
+      "name": "timestamp",
+	  "type": [
+	  	"null",
+		"string",
+		{
+		  "type": "long",
+		  "logicalType": "timestamp-micros"
+		}
+	  ],
+	  "default": null
+    },
+    {
+      "name": "user",
+	  "default": null,
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+name = 'sample_record_def'
+type = 'record'
+
+[[fields]]
+  name = 'amount'
+  type = ['null', 'long']
+
+[[fields]]
+  name = 'code'
+  type = ['null', 'long']
+
+[[fields]]
+  name = 'price'
+  type = ['null', 'double']
+
+[[fields]]
+  name = 'removed'
+  type = ['null', 'boolean']
+
+[[fields]]
+  name = 'status'
+
+  [fields.type]
+    default = 'UNSPECIFIED'
+    name = 'StatusCode'
+    symbols = ['UNSPECIFIED', 'OK', 'CANCEL', 'INVALID_REQUEST', 'TIME_OUT', 'NOT_FOUND', 'ALREADY_EXISTS', 'NO_PERMISSION', 'OUT_OF_RESOURCE', 'ABORT', 'OUT_OF_RANGE', 'INTERNAL', 'UNAVAILABLE']
+    type = 'enum'
+
+[[fields]]
+  name = 'timestamp'
+
+  [fields.type]
+    logicalType = 'timestamp-micros'
+    type = 'long'
+
+[[fields]]
+  name = 'user'
+  type = ['null', 'string']

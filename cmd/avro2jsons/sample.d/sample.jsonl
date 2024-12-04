@@ -1,0 +1,3 @@
+{"amount":299792458, "code": 634, "price": 42.195, "removed": true, "status":"CANCEL", "timestamp": "2024-12-03T23:44:02.123Z", "user": "JD"}
+{"amount":42, "code": 333, "price": 3.776, "removed": false, "status":"OK", "timestamp": "2024-12-03T23:44:02.456Z", "user": "jd"}
+{"amount":null, "code": null, "price": null, "removed": null, "status":"UNSPECIFIED", "timestamp": null, "user": null}
